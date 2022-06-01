@@ -1,25 +1,94 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="styles/styles.scss" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-
 <body>
-  <div class="container">
-        <div class="kanban-heading">
-            <strong class="kanban-heading-text">Kanban Board</strong>
-        </div>
-        <div class="kanban-board">
-            <div id="todo">To Do</div>
-            <div id="inprogress">In Progress</div>
-            <div id="done">Done</div>
-        </div>
-    </div>
-  <script src="server.js"></script>
-</body>
+    <div class="container">
+		<div class="kanban-heading">
+			<strong class="kanban-heading-text">Project board.</strong>
+		</div>
 
+		<div class="kanban-board">
+
+      
+<!--       TO DO -->
+			<div class="kanban-block" id="todo" ondragover="allowDrop(event)" ondrop="drop(event)">
+        <div class="square"></div>
+				<strong>To Do</strong>  
+				<div class="task-button-block">
+					<button id="task-button" onclick="createTask()">Create new task</button>
+				</div>
+			</div>
+
+      <!--   IN PROGRESS -->
+			<div class="kanban-block" id="inprogress" ondragover="allowDrop(event)" ondrop="drop(event)">
+        <div class="square1"></div>
+				<strong>In Progress</strong>
+			</div>
+
+      <!--      Under review-->
+			<div class="kanban-block" id="underreview" ondragover="allowDrop(event)" ondrop="drop(event)">
+        <div class="square2"></div>
+				<strong>Under review</strong>
+			</div>
+
+      <!--       DONE -->
+			<div class="kanban-block" id="done" ondragover="allowDrop(event)" ondrop="drop(event)">
+        <div class="square3"></div>
+				<strong>Done</strong>
+			</div>
+
+<!--     CREATE NEW TASK -->
+			<div class="create-new-task-block" id="create-new-task-block">
+				<strong>New Task</strong> <span class="form-row"><label class="form-row-label" for="task-name">Task</label> <input class="form-row-input" id="task-name" name="task-name" type="text"></span> <span class="form-row"><label class="form-row-label" for="task-name">Description</label> 
+				<textarea class="form-row-input" cols="70" id="task-description" name="task-description" rows="10"></textarea></span> <span class="form-row-buttons"><button id="edit-button" onclick="editTask()"><span class="form-row-buttons">Edit</span> <button id="save-button" onclick="saveTask()">Save</button></button></span> <button id="cancel-button" onclick="createTask()">Cancel </button>
+			</div>
+		</div>
+    
+	</div>
+
+  <div>
+      <form id="taskform">
+      <label for="task">Task:</label>
+      <input type="text" name="task" id="taskInput">
+
+      <br>
+    <!-- Date input -->
+      <label for="dueDate">Due Date: </label>
+      <input type="date" name="dueDate" id="dueDateInput">
+      <br>
+    <!-- Time input -->
+    <label for="completionTime">Completion Time: </label>
+      <input type="time" name="completionTime" id="completionTimeInput">
+
+      <br>
+
+    <label for="estimatedTime">Estimated completion time (in mins):</label>
+    <input type="number" name="estimatedTime" id="estimatedTimeInput">
+    <!-- Priority -->
+    <br>
+
+    <label for="priority">Task Priority:</label>
+    <select name="prority" id="priorityInput">
+      <option value="">Select one</option>
+      <option value="Low">Low</option>
+      <option value="Medium">Medium</option>
+      <option value="High">High</option>
+    </select>
+
+    <br>
+
+      <button type="submit">Submit</button>
+    </form>
+    <ul id="tasklist">
+    </ul>
+</div>
+  
+	<script src="script.js">
+	</script>
+</body>
 </html>
