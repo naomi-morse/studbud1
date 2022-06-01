@@ -1,95 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="kanban.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="home.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <div class="container">
-		<div class="kanban-heading">
-			<strong class="kanban-heading-text">Project board.</strong>
-		</div>
+  <div id="root" class="container">
 
-		<div class="kanban-board">
-
-      
-<!--       TO DO -->
-			<div class="kanban-block" id="todo" ondragover="allowDrop(event)" ondrop="drop(event)">
-        <div class="square"></div>
-				<strong>To Do</strong>  
-				<div class="task-button-block">
-					<button id="task-button" onclick="createTask()">Create new task</button>
-				</div>
-			</div>
-
-      <!--   IN PROGRESS -->
-			<div class="kanban-block" id="inprogress" ondragover="allowDrop(event)" ondrop="drop(event)">
-        <div class="square1"></div>
-				<strong>In Progress</strong>
-			</div>
-
-      <!--      Under review-->
-			<div class="kanban-block" id="underreview" ondragover="allowDrop(event)" ondrop="drop(event)">
-        <div class="square2"></div>
-				<strong>Under review</strong>
-			</div>
-
-      <!--       DONE -->
-			<div class="kanban-block" id="done" ondragover="allowDrop(event)" ondrop="drop(event)">
-        <div class="square3"></div>
-				<strong>Done</strong>
-			</div>
-
-<!--     CREATE NEW TASK -->
-			<div class="create-new-task-block" id="create-new-task-block">
-				<strong>New Task</strong> <span class="form-row"><label class="form-row-label" for="task-name">Task</label> <input class="form-row-input" id="task-name" name="task-name" type="text"></span> <span class="form-row"><label class="form-row-label" for="task-name">Description</label> 
-				<textarea class="form-row-input" cols="70" id="task-description" name="task-description" rows="10"></textarea></span> <span class="form-row-buttons"><button id="edit-button" onclick="editTask()"><span class="form-row-buttons">Edit</span> <button id="save-button" onclick="saveTask()">Save</button></button></span> <button id="cancel-button" onclick="createTask()">Cancel </button>
-			</div>
-		</div>
-    
-	</div>
-
-  <div>
-      <form id="taskform">
-      <label for="task">Task:</label>
-      <input type="text" name="task" id="taskInput">
-
-      <br>
-    <!-- Date input -->
-      <label for="dueDate">Due Date: </label>
-      <input type="date" name="dueDate" id="dueDateInput">
-      <br>
-    <!-- Time input -->
-    <label for="completionTime">Completion Time: </label>
-      <input type="time" name="completionTime" id="completionTimeInput">
-
-      <br>
-
-    <label for="estimatedTime">Estimated completion time (in mins):</label>
-    <input type="number" name="estimatedTime" id="estimatedTimeInput">
-    <!-- Priority -->
-    <br>
-
-    <label for="priority">Task Priority:</label>
-    <select name="prority" id="priorityInput">
-      <option value="">Select one</option>
-      <option value="Low">Low</option>
-      <option value="Medium">Medium</option>
-      <option value="High">High</option>
-    </select>
-
-    <br>
-
-      <button type="submit">Submit</button>
-    </form>
-    <ul id="tasklist">
-    </ul>
-</div>
-  
-	<script src="script.js">
-	</script>
+    <header class="header">
+   <div class="header"></div>
+      <div class="intro">
+   <h3>WELCOME TO</h3>
+   <h1>STUD BUD</h1>
+      <p>Stud Bud is a web application which helps students to stay on top of their work. It provides tools for task, time and content management. These tools will help people to stay motivated and productive whilst studying. As well as this, it allows them to never fall behind in university.</p>
+      </div>
+ 
+        
+    </header>
+ 
+    <nav class="nav">
+   <div class="nav"></div>
+   <div class="nav"><img alt="logo icon" class="img" height="50" src="pictures/logo.png"></div>
+ 
+      <br><br>
+ 
+      <a href="kanban.html"><img src="pictures/task.png" alt="task icon" height="50"></a>
+ 
+      <br><br>
+ 
+        <div class="nav"><img alt="time icon" class="img" height="50" src="pictures/time.png"></div>
+ 
+ <!--      <a href="kanban.html"><img src="pictures/time.png" alt="time" height="50"></a> -->
+ 
+      <br><br>
+ 
+        <div class="nav"><img alt="content icon" class="img" height="50" src="pictures/content.png"></div>
+ 
+      <br><br>
+ 
+        <div class="nav"><img alt="music icon" class="img" height="50" src="pictures/music.png"></div>
+ 
+    </nav>
+ 
+   <content class="content"> 
+   <div class="content"></div>
+     <h2>What we offer</h2>
+       <br>
+     
+     <div class="card-flex">
+       
+     <!-- card 1 -->
+     <div class="card1">
+       <div class="card"><img alt="donate icon" class="img3" height="100" src="pictures/taskicon.png"></div>
+      <div class="card">
+         <h3>Task management</h3>
+       </div>
+       <div class="card">
+         <p>A kanban board has been created to allow you to organise your 'to do' lists more effectively. Along with this, there is a normal task list.</p>
+       </div>
+     </div>
+       
+     <!-- card 2 -->
+     <div class="card2">
+       <div class="card"><img alt="world icon" class="img3" height="100" src="pictures/timeicon.png"></div>
+       <div class="card">
+         <h3>Time management</h3>
+       </div>
+       <div class="card">
+         <p>A timer will help to keep track of time. Furthermore, there is a pomodoro timer which helps promote productivity through breaks.</p>
+       </div>
+     </div>
+       
+         <!-- card 3 -->
+     <div class="card3">
+       <div class="card"><img alt="content icon" class="img3" height="100" src="pictures/contenticon.png"></div>
+       <div class="card">
+         <h3>Content management</h3>
+       </div>
+       <div class="card">
+         <p>There is a convenient reading list to help organise and keep track of all the useful resources while studying!</p>
+       </div>
+         </div>
+ 
+ 
+        <!-- card 4 -->
+     <div class="card4">
+       <div class="card"><img alt="music icon" class="img4" height="100" src="pictures/musicicon.png"></div>
+       <div class="card">
+         <h3>Content management</h3>
+       </div>
+       <div class="card">
+         <p>An embedded music player will help to maintain productivity and focus. It will also allow for more fun when working hard studying!</p>
+       </div>
+         </div>
+   </div>
+ 
+     
+      <!-- TIPS section -->
+     <div class="tips">
+ 
+     <ol>
+       <h2>Tips</h2>
+       <br>
+           <li><h3>Make a plan and stick to it </h3>Plan out your time and what you would like to achieve in each study session. This will give you a clear goal to work towards.</li>
+           <br>
+           <li><h3>Break it up</h3> Assign specific tasks for each study block and hav breaks in between each session. This will make your work more digestible to complete.</li>
+           <br>
+           <li><h3>Create a good study space</h3> Choose/create an environment that works for you. Make sure you are comfortable in your chair and your desk is clear.</li>
+           <br>
+           <li><h3>Organisation is key</h3> Make sure you always stay organised to reduce last minute stress. Keep on top of your tasks by always planning ahead.</li>
+           <br>
+           <li><h3>Treat yourself</h3> Make sure you give yourself plenty of breaks and reward yourself when you are done with a task.</li>
+           <br>
+         </ol>
+     
+       </div>
+     
+ 
+ 
+    </content>
+     
+   <footer class="footer">
+   <div class="footer"></div>
+    <div class="social"><img alt="facebook logo" class="image" height="60" src="pictures/facebook.png"></div>
+ 
+      <div class="social"><img alt="twitter logo" class="image" height="60" src="pictures/twitter.png"></div>
+ 
+      <div class="social"><img alt="instagram logo" class="image" height="60" src="pictures/insta.png"></div>
+ 
+     
+ </footer>
+ 
+ 
+   
+ </div>
+ 
 </body>
 </html>
