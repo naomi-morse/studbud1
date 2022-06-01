@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="style.css" rel="stylesheet">
+	<title>Kanban Board</title>
+</head>
+
+  
+<body>
+	<div class="container">
+		<div class="kanban-heading">
+			<strong class="kanban-heading-text">Project board.</strong>
+		</div>
+
+		<div class="kanban-board">
+
+      
+<!--       TO DO -->
+			<div class="kanban-block" id="todo" ondragover="allowDrop(event)" ondrop="drop(event)">
+				<strong>To Do</strong>
+				<div class="task-button-block">
+					<button id="task-button" onclick="createTask()">Create new task</button>
+				</div>
+			</div>
+
+      <!--   IN PROGRESS -->
+			<div class="kanban-block" id="inprogress" ondragover="allowDrop(event)" ondrop="drop(event)">
+				<strong>In Progress</strong>
+			</div>
+
+      <!--      Under review-->
+			<div class="kanban-block" id="underreview" ondragover="allowDrop(event)" ondrop="drop(event)">
+				<strong>Under review</strong>
+			</div>
+
+      <!--       DONE -->
+			<div class="kanban-block" id="done" ondragover="allowDrop(event)" ondrop="drop(event)">
+				<strong>Done</strong>
+			</div>
+
+<!--     CREATE NEW TASK -->
+			<div class="create-new-task-block" id="create-new-task-block">
+				<strong>New Task</strong> <span class="form-row"><label class="form-row-label" for="task-name">Task</label> <input class="form-row-input" id="task-name" name="task-name" type="text"></span> <span class="form-row"><label class="form-row-label" for="task-name">Description</label> 
+				<textarea class="form-row-input" cols="70" id="task-description" name="task-description" rows="10"></textarea></span> <span class="form-row-buttons"><button id="edit-button" onclick="editTask()"><span class="form-row-buttons">Edit</span> <button id="save-button" onclick="saveTask()">Save</button></button></span> <button id="cancel-button" onclick="createTask()">Cancel </button>
+			</div>
+		</div>
+    
+	</div>
+  
+	<script src="public/script.js">
+	</script>
+</body>
+</html>
