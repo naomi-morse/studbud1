@@ -1,0 +1,165 @@
+body{
+    background-color: rgb(242, 243, 247);
+    font-family: 'Hind', sans-serif;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .container {
+    width: 70%;
+    min-width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 300px; 
+  }
+  
+  .kanban-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .kanban-board {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .kanban-heading-text {
+    font-size: 25px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin: 1rem;
+  }
+  
+  .kanban-block,
+  .create-new-task-block {
+    padding: 10px;
+    width: 30.5%;
+    margin: 5px;
+    border-radius: 10px;
+  }
+  
+  
+  .square {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(224, 98, 85);
+    border-radius: 3px;
+  }
+  
+  .square1 {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(134, 76, 250);
+    border-radius: 3px;
+  }
+  
+  .square2 {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(249, 163, 57);
+    border-radius: 3px;
+  }
+  
+  .square3 {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(112, 198, 167);
+    border-radius: 3px;
+  }
+  
+  
+  .task {
+    background-color: white;
+    margin: 0.2rem 0rem 0.3rem 0rem;
+    border-radius: 10px;
+    padding: 25px;
+  }
+  
+  .task:hover {
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.5);; 
+  }
+  
+  #task-button {
+    margin: 0.2rem 0rem 0.1rem 0rem;
+    background-color: white;
+    border-radius: 2px;
+    width: 100%;
+    border: 4px solid black;
+    padding: 0.5rem 2.7rem;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    font-family: 'Hind', sans-serif;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  
+  
+  
+  /*Creating a new task*/
+  
+  .create-new-task-block {
+    display: none;
+    /* display: flex; */
+    background: rgb(242, 243, 247);
+    width: 64.4%;
+    flex-direction: column;
+  }
+  
+  .form-row {
+    display: flex;
+    flex-direction: row;
+    margin: 0.2rem;
+  }
+  
+  .form-row-label {
+    width: 15%;
+    padding: 0.2rem;
+    padding-right: 0.5rem;
+    border: 0.1rem solid black;
+    border-right: 0;
+    border-radius: 0.2rem 0rem 0rem 0.2rem;
+  }
+  
+  .form-row-input {
+    border: 0.1rem solid black;
+    border-radius: 0rem 0.2rem 0.2rem 0rem;
+    width: 85%;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  .form-row-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.2rem;
+  }
+  
+  #edit-button,
+  #save-button,
+  #cancel-button {
+    margin: 0.2rem 0rem 0.1rem 0rem;
+    background-color: white;
+    border-radius: 0.2rem;
+    width: 49.2%;
+    border: 0.25rem solid black;
+    padding: 0.5rem 2.7rem;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    font-family: 'Hind', sans-serif;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  #edit-button {
+    display: none;
+  }
+  
