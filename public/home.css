@@ -1,140 +1,163 @@
 p{
-    font-family: 'Hind', sans-serif;
-   font-family: 'Poppins', sans-serif;
- }
- 
- h1{
-   font-family: 'Hind', sans-serif;
-   font-family: 'Poppins', sans-serif;
-   font-size: 50px;
- }
- 
- h2{
-   font-family: 'Hind', sans-serif;
-   font-family: 'Poppins', sans-serif;
-   font-size: 30px;
- }
- 
- h3{
   font-family: 'Hind', sans-serif;
-   font-family: 'Poppins', sans-serif;
- }
- 
- 
- /* Three cards */
- 
- .card-flex {
-     display: flex;
-     flex-direction: row;
-     justify-content: space-evenly;
- }
- 
- .card1 {
-     display: inline-block;
-     /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
-     width: 20%;
-     /*background-color: rgb(56, 109, 255);*/
-     border-radius: 20px;
-     text-align: center;
- }
- .card2 {
-     display: inline-block;
-     /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
-     width: 20%;
-     /*background-color: rgb(91, 212, 167);*/
-     border-radius: 20px;
-     text-align: center;
- }
- .card3 {
-     display: inline-block;
-     /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
-     width: 20%;
-     /*background-color: rgb(97, 66, 255);*/
-     border-radius: 20px;
-     text-align: center;
- }
- 
- .card4 {
-     display: inline-block;
-     /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
-     width: 20%;
-     /*background-color: rgb(255, 143, 0);*/
-     border-radius: 20px;
-     text-align: center;
- }
- 
- ol{
-    font-family: 'Hind', sans-serif;
-   font-family: 'Poppins', sans-serif;
- }
- 
- .tips{
-   background-color: rgb(240, 243, 245);
+ font-family: 'Poppins', sans-serif;
+}
+
+h1{
+ font-family: 'Hind', sans-serif;
+ font-family: 'Poppins', sans-serif;
+ font-size: 50px;
+}
+
+h2{
+ font-family: 'Hind', sans-serif;
+ font-family: 'Poppins', sans-serif;
+ font-size: 30px;
+}
+
+h3{
+font-family: 'Hind', sans-serif;
+ font-family: 'Poppins', sans-serif;
+}
+
+
+/* Three cards */
+
+.card-flex {
    display: flex;
-   margin: 100px;
-   padding: 50px;
- }
- 
- .intro{
-   background-color: rgb(240, 243, 245);
-   padding: 50px;
-   margin-top: 100px;
-   margin-right: 100px;
- }
- 
- 
- .footer{
-   background-color: rgb(112, 112, 112); 
- }
- 
+   flex-direction: row;
+   justify-content: space-evenly;
+}
+
+.card1 {
+   display: inline-block;
+   /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+   width: 20%;
+   /*background-color: rgb(56, 109, 255);*/
+   border-radius: 20px;
+   text-align: center;
+}
+.card2 {
+   display: inline-block;
+   /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+   width: 20%;
+   /*background-color: rgb(91, 212, 167);*/
+   border-radius: 20px;
+   text-align: center;
+}
+.card3 {
+   display: inline-block;
+   /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+   width: 20%;
+   /*background-color: rgb(97, 66, 255);*/
+   border-radius: 20px;
+   text-align: center;
+}
+
+.card4 {
+   display: inline-block;
+   /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+   width: 20%;
+   /*background-color: rgb(255, 143, 0);*/
+   border-radius: 20px;
+   text-align: center;
+}
+
+ol{
+  font-family: 'Hind', sans-serif;
+ font-family: 'Poppins', sans-serif;
+}
+
+.tips{
+ background-color: rgb(240, 243, 245);
+ display: flex;
+ margin: 100px;
+ padding: 50px;
+}
+
+.intro{
+ background-color: rgb(240, 243, 245);
+ padding: 50px;
+ margin-top: 100px;
+ margin-right: 100px;
+}
+
+/*  FOOTER */
+.footer{
+ background-color: rgb(112, 112, 112); 
+}
+
+ul.links{
+list-style-type: none;
+margin: 0;
+padding-top: 30px;
+overflow: hidden;
+font-family: 'Hind', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+
+ul li {
+list-style: none;
+text-align:center;
+}
+
+li {
+padding: 5px 5px;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 3px;
+text-decoration: none;
+}
 
 
- 
- 
- 
- /* -------------------
- ADD YOUR GRID CSS HERE
- -------------------- */
- 
- .container {
-   display: grid; 
-   grid-template-columns: 0.3fr 1.7fr 1fr; 
-   grid-template-rows: 0.9fr 1.8fr 0.3fr; 
-   gap: 0px 0px; 
-   grid-template-areas: 
-     "nav header header"
-     "content content content"
-     "footer footer footer"; 
+
+
+/* -------------------
+ADD YOUR GRID CSS HERE
+-------------------- */
+
+.container {
+ display: grid; 
+ grid-template-columns: 0.3fr 1.7fr 1fr; 
+ grid-template-rows: 0.9fr 1.8fr 0.3fr; 
+ gap: 0px 0px; 
+ grid-template-areas: 
+   "nav header header"
+   "content content content"
+   "footer footer footer"; 
+}
+.footer { grid-area: footer; }
+.content { grid-area: content; }
+.nav { grid-area: nav; }
+.header { grid-area: header; }
+
+/* -------------------
+ADD YOUR RESPONSIVE CSS HERE
+-------------------- */
+@media screen and (max-width: 900px) {
+ .grid-container {
+   grid-template-areas:
+     "header"
+     "nav"
+     "content"
+     "aside"
+     "footer";
+
+   grid-template-columns: 1fr;
+   grid-template-rows:
+     auto /* Header */
+     auto /* Nav */
+     1fr /* Content */
+     auto /* Aside */
+     auto; /* Footer */
  }
- .footer { grid-area: footer; }
- .content { grid-area: content; }
- .nav { grid-area: nav; }
- .header { grid-area: header; }
- 
- /* -------------------
- ADD YOUR RESPONSIVE CSS HERE
- -------------------- */
- @media screen and (max-width: 900px) {
-   .grid-container {
-     grid-template-areas:
-       "header"
-       "nav"
-       "content"
-       "aside"
-       "footer";
- 
-     grid-template-columns: 1fr;
-     grid-template-rows:
-       auto /* Header */
-       auto /* Nav */
-       1fr /* Content */
-       auto /* Aside */
-       auto; /* Footer */
-   }
- 
-   nav, aside {
-     margin: 0;
-   }
+
+ nav, aside {
+   margin: 0;
  }
- 
- 
+}
+
