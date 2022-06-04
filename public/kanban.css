@@ -170,6 +170,14 @@ textarea {
     "nav content content";
 }
 
-.nav { grid-area: nav; }
+.nav { 
+  grid-area: nav; 
+  background: white;
+  padding-top: 20px;
+  padding-left: 10px;
+  border-radius: 20px;
+}
 
-.content { grid-area: content; }
+.content { 
+  grid-area: content; 
+}

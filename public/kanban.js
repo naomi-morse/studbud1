@@ -58,3 +58,5 @@ function editTask(){
         editButton.style.display = "block";
     }
 }
+
+// credit to https://karthikdevarticles.com/creating-a-kanban-board-with-html-css-and-javascript#heading-html

@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(242, 243, 247);
+    font-family: 'Hind', sans-serif;
+    font-family: 'Poppins', sans-serif;
+     margin: 50px;
+  }
+
+
+
+
+
+
+/* CSS GRID */
+.container {  display: grid;
+    grid-template-columns: 0.2fr 1.5fr 1.5fr;
+    grid-template-rows: 0.9fr 1.8fr 0.3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "nav stopwatch pomodoro"
+      "nav stopwatch pomodoro"
+      "nav stopwatch pomodoro";
+  }
+  
+  .nav { 
+    grid-area: nav; 
+    background: white;
+    padding-top: 20px;
+    padding-left: 10px;
+    border-radius: 20px;
+    }
+  
+  .stopwatch { grid-area: stopwatch; }
+  
+  .pomodoro { grid-area: pomodoro; }
+  
