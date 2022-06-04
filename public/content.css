@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(242, 243, 247);
+    font-family: 'Hind', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin: 50px;
+    
+  }
+  
+  
+  .input{
+    padding: 5px;
+  }
+  
+  #book-form{
+    padding-bottom: 75px;
+  }
+  
+  
+  
+  #title,
+  #author, 
+  #isbn{
+    padding: 10px;
+    width: 50%;
+  }
+  
+  th{
+    padding-right: 200px;
+  }
+  
+  .reading-list{
+    text-align: center;
+  }

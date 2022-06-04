@@ -132,7 +132,10 @@ ADD YOUR GRID CSS HERE
 }
 .footer { grid-area: footer; }
 .content { grid-area: content; }
-.nav { grid-area: nav; }
+.nav { 
+   grid-area: nav; 
+
+}
 .header { grid-area: header; }
 
 /* -------------------
