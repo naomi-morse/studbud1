@@ -1,63 +1,63 @@
 body{
-    background-color: rgb(242, 243, 247);
-    font-family: 'Hind', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    margin: 50px;
-    
-  }
+  background-color: rgb(242, 243, 247);
+  font-family: 'Hind', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  margin: 50px;
   
-  
-  .input{
-    padding: 5px;
-  }
-  
-  input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 10px ;
-    display: inline-block;
-    border: 1px solid grey;
-    border-radius: 5px;
-    box-sizing: border-box;
-  }
-  
-  input[type=submit] {
-    width: 100%;
-    background-color: rgb(60, 96, 239);
-    color: white;
-    padding: 14px 20px;
-    margin: 10px 0px;
-    border: 2px solid black;
-    border-radius: 7px;
-    font-size: 17px;
-    cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-    box-shadow: 0 0 11px rgba(0, 0, 0, 0.5); 
-  }
-  
-  /* CSS GRID */
-  .container {  display: grid;
-    grid-template-columns: 0.2fr 1.5fr 1.5fr;
-    grid-template-rows: 0.9fr 1.8fr 0.3fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "nav content content"
-      "nav content content"
-      "nav content content";
-  }
-  
-  .nav { 
-    grid-area: nav; 
-    background: white;
-    padding-top: 20px;
-    padding-left: 10px;
-    margin-right: 50px;
-    border-radius: 20px;
-  }
-  
-  
-  .content { grid-area: content; }
-  
+}
+
+th{
+  padding-right: 300px;
+}
+
+
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px ;
+  display: inline-block;
+  border: 1px solid grey;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: rgb(60, 96, 239);
+  color: white;
+  padding: 14px 20px;
+  margin: 10px 0px;
+  border: 2px solid black;
+  border-radius: 7px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  box-shadow: 0 0 11px rgba(0, 0, 0, 0.5); 
+}
+
+/* CSS GRID */
+.container {  display: grid;
+  grid-template-columns: 0.2fr 1.5fr 1.5fr;
+  grid-template-rows: 0.9fr 1.8fr 0.3fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "nav content content"
+    "nav content content"
+    "nav content content";
+}
+
+.nav { 
+  grid-area: nav; 
+  background: white;
+  padding-top: 20px;
+  padding-left: 10px;
+  margin-right: 50px;
+  border-radius: 20px;
+}
+
+
+.content { grid-area: content; }

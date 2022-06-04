@@ -132,10 +132,16 @@ ADD YOUR GRID CSS HERE
 }
 .footer { grid-area: footer; }
 .content { grid-area: content; }
+
 .nav { 
    grid-area: nav; 
+   /* background: white;
+   padding-top: 20px;
+   padding-left: 10px;
+   margin-right: 50px;
+   border-radius: 20px; */
+ }
 
-}
 .header { grid-area: header; }
 
 /* -------------------

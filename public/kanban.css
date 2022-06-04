@@ -151,8 +151,67 @@ textarea {
   font-family: 'Poppins', sans-serif;
 }
 
+
+/* TASKLIST CSS */
 .tasklist{
   padding-top: 200px;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px ;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type=time], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px ;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type=date], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px ;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type=number], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px ;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+
+button{
+  width: 100%;
+  background-color: rgb(60, 96, 239);
+  color: white;
+  padding: 14px 20px;
+  margin: 10px 0px;
+  border: 2px solid black;
+  border-radius: 7px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0 0 11px rgba(0, 0, 0, 0.5);; 
 }
 
 
@@ -174,10 +233,9 @@ textarea {
   grid-area: nav; 
   background: white;
   padding-top: 20px;
-  padding-left: 10px;
+  padding-left: 5px;
   border-radius: 20px;
 }
 
-.content { 
-  grid-area: content; 
-}
+
+.content { grid-area: content; }
