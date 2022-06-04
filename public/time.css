@@ -1,36 +1,49 @@
 body{
-    background-color: rgb(242, 243, 247);
-    font-family: 'Hind', sans-serif;
-    font-family: 'Poppins', sans-serif;
-     margin: 50px;
-  }
+  background-color: rgb(242, 243, 247);
+  font-family: 'Hind', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  margin: 50px;
+  text-align: center;
+}
 
 
+.button{
+margin: 4px 0px 2px 0px;
+background-color: rgb(60, 96, 239);
+border-radius: 5px;
+width: 20%;
+border: 2px solid black;
+padding: 10px 0px;
+border-radius: 7px;
+font-size: 17px;
+cursor:pointer;
+}
 
+.button:hover {
+box-shadow: 0 0 11px rgba(0, 0, 0, 0.5);; 
+}
 
-
+h2{
+font-size: 100px
+}
 
 /* CSS GRID */
-.container {  display: grid;
-    grid-template-columns: 0.2fr 1.5fr 1.5fr;
-    grid-template-rows: 0.9fr 1.8fr 0.3fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "nav stopwatch pomodoro"
-      "nav stopwatch pomodoro"
-      "nav stopwatch pomodoro";
-  }
-  
-  .nav { 
-    grid-area: nav; 
-    background: white;
-    padding-top: 20px;
-    padding-left: 10px;
-    border-radius: 20px;
-    }
-  
-  .stopwatch { grid-area: stopwatch; }
-  
-  .pomodoro { grid-area: pomodoro; }
-  
+/* .container {  
+display: grid;
+grid-template-columns: 0.2fr 1.5fr 1.5fr;
+grid-template-rows: 0.9fr 1.8fr 0.3fr;
+gap: 0px 0px;
+grid-auto-flow: row;
+grid-template-areas:
+  "nav stopwatch pomodoro"
+  "nav stopwatch pomodoro"
+  "nav stopwatch pomodoro";
+}
+
+.nav { grid-area: nav; }
+
+.stopwatch { grid-area: stopwatch; }
+
+.pomodoro { grid-area: pomodoro; }
+
+*/
