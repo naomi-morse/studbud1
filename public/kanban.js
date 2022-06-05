@@ -10,13 +10,17 @@ function allowDrop(ev) {
     ev.preventDefault();
 }
 
+
 function drop(ev) {
     ev.preventDefault();
     var data = ev.dataTransfer.getData("text");
+    // Append child is useful when needing to move an item from one list to another. 
+    //It appends a node as the last child of an element.
     ev.currentTarget.appendChild(document.getElementById(data));
 }
 
 function createTask(){
+    //The getElementById() method returns an element with a specified value.
     var x = document.getElementById("inprogress");
     var y = document.getElementById("done");
     var z = document.getElementById("create-new-task-block");
@@ -44,9 +48,11 @@ function saveTask(){
 function editTask(){
     var saveButton = document.getElementById("save-button");
     var editButton = document.getElementById("edit-button");
+    // This if statement specifies a block of code to be executed, if a specified condition is true
     if (saveButton.style.display === "none") {
         saveButton.style.display = "block";
         editButton.style.display = "none";
+    //This else statement specifies a block of code to be executed, if the same condition is false
     } else{
         saveButton.style.display = "none";
         editButton.style.display = "block";
@@ -68,6 +74,8 @@ var completionTimeInput = document.getElementById("completionTimeInput");
 var estimatedTimeInput = document.getElementById("estimatedTimeInput");
 var priorityInput = document.getElementById("priorityInput");
 
+// by adding an event listener, this method attaches an event handler to the specified element.
+//for this element, it is the submit button
 form.addEventListener("submit", function(event){
   event.preventDefault();
   let task = taskInput.value;
@@ -113,6 +121,7 @@ function renderTask(task){
 
 
   // Event Listeners for DOM elements
+  // This method attaches an event handler to the document
   delButton.addEventListener("click", function(event){
     event.preventDefault();
     item.remove();

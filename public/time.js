@@ -6,6 +6,8 @@ var h1 = document.getElementsByTagName('h2')[0],
     seconds = 0, minutes = 0, hours = 0,
     t;
 
+// Here, I have set up a JavaScript function. This is a block of code designed to perform a particular task.
+// this function's task is to add time
 function add() {
     seconds++;
     if (seconds >= 60) {
@@ -51,8 +53,10 @@ var pomodoro = {
     interval : null,
     minutesDom : null,
     secondsDom : null,
+    //this initialises the function or page
     init : function(){
       var self = this;
+      //The document  querySelector() returns the element within the document that matches the specified selector (minutes, seconds etc).
       this.minutesDom = document.querySelector('#minutes');
       this.secondsDom = document.querySelector('#seconds');
       this.interval = setInterval(function(){
