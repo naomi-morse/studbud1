@@ -10,6 +10,7 @@ body{
   margin: 50px;
   /* This aligns all text to the center*/
   text-align: center;
+  
 }
 
 /* This styles the buttons which control the stopwatch */
@@ -50,7 +51,7 @@ font-size: 100px
 
 
 .pomodoro{
-  text-align:center;
+  text-align: center;
   font-family: 'Hind', sans-serif;
   font-family: 'Poppins', sans-serif;
 }
