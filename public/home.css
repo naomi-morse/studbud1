@@ -1,119 +1,148 @@
-p{
+/* This defines the styling for entire body section of the webpage*/
+body{
+ /* All body text will be part of the below font family, which was also loaded in html*/
+ /* This loads the fonts into the CSS, to actually apply them to the headings*/
  font-family: 'Hind', sans-serif;
  font-family: 'Poppins', sans-serif;
 }
 
+/* This makes the h1 heading have a size of 50px, creating relevant hierarchy*/
 h1{
- font-family: 'Hind', sans-serif;
- font-family: 'Poppins', sans-serif;
  font-size: 50px;
 }
 
+/* This makes the h2 heading have a size of 40px, creating relevant hierarchy*/
 h2{
- font-family: 'Hind', sans-serif;
- font-family: 'Poppins', sans-serif;
- font-size: 30px;
+ font-size: 40px;
 }
 
-h3{
-font-family: 'Hind', sans-serif;
- font-family: 'Poppins', sans-serif;
-}
+.intro{
+   /* This makes the background, of the div, grey*/
+    background-color: rgb(240, 243, 245);
+    /* This makes the padding set to 50 pixels, between the content and the borders of the div*/
+    padding: 50px;
+    padding-bottom: 100px;
+    /* This creates a 100 pixel gap between the top of the page and the top of the intro div*/
+    margin-top: 100px;
+    /* This creates a 100 pixel margin on the rightv*/
+    margin-right: 100px;
+   
+   }
 
+
+/* WHAT WE OFFER */
+
+/* This shifts the "what we offer" text 50 pixels to the right, so it is not agains the edge of the page*/
 .offer{
+   /* This div has a left margin of 50 pixels*/
    margin-left: 50px;
 }
 
 
-/* Three cards */
-
+/* This defines the behaviour of the cards */
 .card-flex {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-evenly;
+	display: flex;
+  /* This places the cards in a row structure, so that they display horizontally across the screen */
+	flex-direction: row;
+  /* This spaces the card evenly apart, regardless of changing screen size*/
+	justify-content: space-evenly;
 }
 
 .card1 {
    display: inline-block;
-   /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+   /* Each card will take up 20% of div that it is set to. It defines the width, taking into account changing screen sizes */
    width: 20%;
-   /*background-color: rgb(56, 109, 255);*/
+   /* This curves the corners of the rectangle. It applies a radius to the corners. */
    border-radius: 20px;
+   /* The text is in the center of the card */
    text-align: center;
 }
 .card2 {
    display: inline-block;
-   /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+   /* Each card will take up 20% of div that it is set to. It defines the width, taking into account changing screen sizes */
    width: 20%;
-   /*background-color: rgb(91, 212, 167);*/
+   /* This curves the corners of the rectangle. It applies a radius to the corners. */
    border-radius: 20px;
+   /* The text is in the center of the card */
    text-align: center;
 }
 .card3 {
    display: inline-block;
-   /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+   /* Each card will take up 20% of div that it is set to. It defines the width, taking into account changing screen sizes */
    width: 20%;
-   /*background-color: rgb(97, 66, 255);*/
+   /* This curves the corners of the rectangle. It applies a radius to the corners. */
    border-radius: 20px;
+   /* The text is in the center of the card */
    text-align: center;
 }
 
 .card4 {
    display: inline-block;
-   /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+   /* Each card will take up 20% of div that it is set to. It defines the width, taking into account changing screen sizes */
    width: 20%;
-   /*background-color: rgb(255, 143, 0);*/
+   /* This curves the corners of the rectangle. It applies a radius to the corners. */
    border-radius: 20px;
+   /* The text is in the center of the card */
    text-align: center;
 }
 
+/* This makes the list text the same as the body page*/
 ol{
-  font-family: 'Hind', sans-serif;
- font-family: 'Poppins', sans-serif;
+font-family: 'Hind', sans-serif;
+font-family: 'Poppins', sans-serif;
 }
 
+/* This styles the tips section*/
 .tips{
+/* This makes the background grey*/
  background-color: rgb(240, 243, 245);
  display: flex;
+ /* This makes margins set to 100 pixels, around every side of the div*/
  margin: 100px;
+/* This makes the padding set to 50 pixels, between the content and the borders of the div*/
  padding: 50px;
 }
 
-.intro{
- background-color: rgb(240, 243, 245);
- padding: 50px;
- margin-top: 100px;
- margin-right: 100px;
-}
 
 /*  FOOTER */
 .footer{
+/* This makes the footer have a background of d a dark grey*/
  background-color: rgb(112, 112, 112); 
 }
 
 ul.links{
 list-style-type: none;
+/* This give it no margins*/
 margin: 0;
+/* This places a padding, of 30 pixels, around the top of the links */
 padding-top: 30px;
 overflow: hidden;
+/* This makes the link text the same as the body content*/
 font-family: 'Hind', sans-serif;
 font-family: 'Poppins', sans-serif;
 }
 
 ul li {
+ /* This gets rid of the default bullet points for lists */
 list-style: none;
+/* This helps place the text in the center of the div */
 text-align:center;
 }
 
 li {
+/* This creates space around the text*/
 padding: 5px 5px;
 }
 
 li a {
 display: block;
+/* This makes the text white */
 color: white;
+/* This helps place the text in the center of the div */
 text-align: center;
+/* This places a 3 pixel padding around the elements*/
 padding: 3px;
+/* This gets rid of the default styling for for lists and links */
 text-decoration: none;
 }
 
@@ -121,14 +150,18 @@ text-decoration: none;
 
 
 /* -------------------
-ADD YOUR GRID CSS HERE
+      GRID CSS 
 -------------------- */
 
 .container {
  display: grid; 
+/* This defines the number and the widths of columns within a grid layout. In this case, there are three columns specified*/
  grid-template-columns: 0.3fr 1.7fr 1fr; 
+/* This defines the number and the heights of rows within a grid layout. */
  grid-template-rows: 0.9fr 1.8fr 0.3fr; 
+/* This sets gap between rows and columns to 0px */
  gap: 0px 0px; 
+/* property controls how auto-placed items get inserted in the grid. */
  grid-template-areas: 
    "nav header header"
    "content content content"
@@ -136,21 +169,14 @@ ADD YOUR GRID CSS HERE
 }
 .footer { grid-area: footer; }
 .content { grid-area: content; }
-
-.nav { 
-   grid-area: nav; 
-   /* background: white;
-   padding-top: 20px;
-   padding-left: 10px;
-   margin-right: 50px;
-   border-radius: 20px; */
- }
-
+.nav { grid-area: nav; }
 .header { grid-area: header; }
 
 /* -------------------
-ADD YOUR RESPONSIVE CSS HERE
+ RESPONSIVE CSS HERE
 -------------------- */
+
+/* Responsive web design makes your web page look good on all devices, regardless of their size */
 @media screen and (max-width: 900px) {
  .grid-container {
    grid-template-areas:

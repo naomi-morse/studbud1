@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- The header contains meta data about the site, such as the title, links to CSS files and information that is used for displaying the page in search engines and other websites -->
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,30 +10,39 @@
   <link href="home.css" rel="stylesheet" type="text/css" />
 </head>
 
+<!-- This imports the fonts that I will be calling upon in the CSS -->
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Hind:wght@700&family=Poppins:wght@300&display=swap')
 </style>
 
+<!-- The body contains all of the content that gets displayed on the webpage itself --> 
 <body>
+  <!-- The container is the main div and there are several other divs nested within this one-->
   <div id="root" class="container">
 
+    <!-- The header section contains a nested div which provides information into the web application -->
     <header class="header">
    <div class="header"></div>
       <div class="intro">
+    <!-- The h3 heading was used to create an appropriate hierarchy -->
    <h3>WELCOME TO</h3>
+   <!-- The h1 heading was used to create an appropriate hierarchy, as this is the main heading for the page -->
    <h1>STUD BUD</h1>
       <p>Stud Bud is a web application which helps students to stay on top of their work. It provides tools for task, time and content management. These tools will help people to stay motivated and productive whilst studying. As well as this, it allows them to never fall behind in university.</p>
       </div>
- 
-        
+  
     </header>
  
+    <!-- This section creates the navigation bar of the website. -->
+    <!-- This navigation bar has built in links to each seperate page. The 'href' section tells the website where to go when the user clicks the text-->
     <nav class="nav">
    <div class="nav"></div>
    <div class="nav"><img alt="logo icon" class="img" height="50" src="pictures/logo.png"></div>
  
+      <!-- This make break in the content, so there is more space between each element-->
       <br><br>
  
+      <!-- This image tag includes alt text, for accessibility. The source element specifies where the image will be drawn from. It first indicates the folder, then the specific photo.--> 
       <a href="kanban.html"><img src="pictures/task.png" alt="task icon" height="50"></a>
  
       <br><br>
@@ -46,9 +56,10 @@
       <br><br>
  
       <a href="music.html"><img src="pictures/music.png" alt="music icon" height="50"></a>
- 
+
     </nav>
  
+  <!--  This is a new div with seperate classes. It is a nested div. This will display the content-->
    <content class="content"> 
    <div class="content"></div>
    <div class="offer">
@@ -56,12 +67,16 @@
      </div>
        <br>
      
-     <div class="card-flex">
+     
+       <!-- Here we have several nested divs. Div tags define a division or a section within  HTML. This also makes it easy to style in CSS, using a class or id attribute.-->
+       <div class="card-flex">
        
      <!-- card 1 -->
      <div class="card1">
+      <!-- This loads a picture at the top of the first card. -->
        <div class="card"><img alt="donate icon" class="img3" height="100" src="pictures/taskicon.png"></div>
       <div class="card">
+        <!-- This uses the heading 3 to create a smaller heading for this card -->
          <h3>Task management</h3>
        </div>
        <div class="card">
@@ -69,6 +84,8 @@
        </div>
      </div>
        
+
+     <!-- Refer to comments above -->
      <!-- card 2 -->
      <div class="card2">
        <div class="card"><img alt="world icon" class="img3" height="100" src="pictures/timeicon.png"></div>
@@ -107,8 +124,8 @@
      
       <!-- TIPS section -->
      <div class="tips">
- 
-     <ol>
+     <!-- This creates a numerical list structure -->
+      <ol>
        <h2>Tips</h2>
        <br>
            <li><h3>Make a plan and stick to it </h3>Plan out your time and what you would like to achieve in each study session. This will give you a clear goal to work towards.</li>
@@ -136,6 +153,7 @@
         <!-- the links are stuctured in a list -->
 		<ul class="links">
 				<li>
+          <!-- Here, we link the text to different html pages -->
 					<a class="link" href="index.html">Home</a>
 				</li>
 				<li>
@@ -153,7 +171,6 @@
 			</ul>
 		</div>
  </footer>
- 
  
    
  </div>
