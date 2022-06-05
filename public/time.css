@@ -48,47 +48,53 @@ h2{
 font-size: 100px
 }
 
-
-
+/* POMODORO TIMER STYLING */
 .pomodoro{
+  /* This aligns all the text to sit in the center of the div */
   text-align: center;
+  /* This loads the fonts into the CSS, to actually apply them to the headings*/
   font-family: 'Hind', sans-serif;
   font-family: 'Poppins', sans-serif;
 }
 
+/* This styles the overall timer div*/
 #timer{
-  font-size:50px; 
-  margin:10px auto;
+  font-size:60px; 
+  /* This adds margins around the div. This is so it is more inline with the stopwatch timer*/
+  margin:50px auto;
   width:200px;
   height:200px;
-  overflow:hidden;
-  position:relative;
-  cursor:default;
 }
 
+/* This adds margins to the numerical text of the pomodoro timer */
 #time{
-  margin-top:70px;
+  /* It puts a margin of 100 pixels to the top of the div */
+  margin-top:100px;
 }
 
 
 #work, #shortBreak, #longBreak, #stop{
   margin: 4px 0px 2px 0px;
+  /* It will be blue */
   background-color: rgb(60, 96, 239);
   /* The text will be white */
   color: white;
-  border-radius: 5px;
   width: 20%;
+  /* It will have a black border with a 2 pixel width and solid appearance */
   border: 2px solid black;
+  /* Has padding around the top and bottom*/
   padding: 10px 0px;
+  /* Has rounded edges*/
   border-radius: 7px;
+  /* Defines the size of the font */
   font-size: 17px;
   text-align:center;
+  /* Load the font family to the buttons*/
   font-family: 'Hind', sans-serif;
   font-family: 'Poppins', sans-serif;
+  /* When the cursor goes over this section, it will change into a pointer  */
   cursor:pointer;
 }
-
-
 
 
 /* CSS GRID */

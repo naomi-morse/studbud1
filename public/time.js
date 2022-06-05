@@ -121,3 +121,5 @@ window.onload = function(){
   pomodoro.init();
 };
 
+
+// pomodoro timer js code credit to https://codepen.io/rajdgreat007/pen/edvZpx
