@@ -100,23 +100,6 @@
     margin: 0;
   }
   
-  .progress-container {
-    background: white;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 10px 0;
-    height: 4px;
-    width: 100%;
-  }
-  
-  .progress {
-    background-color: rgb(60, 96, 239);
-    border-radius: 5px;
-    height: 100%;
-    width: 0%;
-    transition: width 0.1s linear;
-  }
-  
 
 
 /* CSS GRID */
