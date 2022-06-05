@@ -1,113 +1,50 @@
-* {
-    box-sizing: border-box;
-  }
-  
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+/* This defines the styling for entire body section of the webpage*/
+body{
+
+    /* All body text will be part of the below font family, which was also loaded in html*/
+    /* This loads the fonts into the CSS, to actually apply them to the headings*/
     font-family: 'Hind', sans-serif;
     font-family: 'Poppins', sans-serif;
-    margin: 0;
-  }
-  
-  .music-container {
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 0 0 11px rgba(0, 0, 0, 0.5); 
-    display: flex;
-    padding: 20px 30px;
-    position: relative;
-    margin: 100px;
-    z-index: 10;
-  }
-  
-  .img-container {
-    position: relative;
-    width: 100px;
-  }
-  
-  .img-container::after {
-    content: '';
-    background-color: white;
-    border-radius: 50%;
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    width: 20px;
-    height: 20px;
-    transform: translate(-50%, 50%);
-  }
-  
-  .img-container img {
-    border-radius: 50%;
-    object-fit: cover;
-    height: 110px;
-    width: inherit;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    animation: rotate 3s linear infinite;
+    /* The page will have 50px margins around it*/
+    margin: 50px;
   }
 
-  .navigation {
+  
+  /* This sets the styling for the heading of the page*/
+  .heading {
+    /* This makes the content be sized appropriately to fit the space available in its flex container. */
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    /* The content will appear in the center of its div */
     justify-content: center;
-    z-index: 1;
   }
-  
-  .action-btn {
-    background-color: white;
-    border: 0;
-    color: #ccc;
-    font-size: 20px;
-    cursor: pointer;
-    padding: 10px;
-    margin: 0 20px;
-  }
-  
-  .action-btn.action-btn-big {
-    color: #ccc;
-    font-size: 30px;
-  }
-  
-  .action-btn:focus {
-    outline: 0;
-  }
-  
-  .music-info {
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 15px 15px 0 0;
-    position: absolute;
-    top: 0;
-    left: 20px;
-    width: calc(100% - 40px);
-    padding: 10px 10px 10px 150px;
-    opacity: 0;
-    transform: translateY(0%);
-    transition: transform 0.3s ease-in, opacity 0.3s ease-in;
-    z-index: 0;
-  }
-  
-  .music-container.play .music-info {
-    opacity: 1;
-    transform: translateY(-100%);
-  }
-  
-  .music-info h4 {
-    margin: 0;
+
+
+/* This styles the actual text of the heading*/
+.heading-text {
+    /* The font will have a size of 25 pixels*/
+    font-size: 25px;
+    /* The background colour will be white*/
+    background-color: rgb(249, 163, 57);
+    /* Padding is used to create space around the heading, inside of its defined borders. The top and bottom padding will be 10 pixels, and the left and right padding will be 30 pixels */
+    padding: 10px 30px;
+    /* The border of the div will be curved at a radius of 10 pixels*/
+    border-radius: 10px;
+    /* The margins create space around the entire element, allowing the design to breathe more*/
+    margin: 30px;
   }
   
 
 
 /* CSS GRID */
-
-  .container {  display: grid;
+.container {  display: grid;
+    /* This defines the number and the widths of columns within a grid layout. In this case, there are three columns specified*/
     grid-template-columns: 0.2fr 1.5fr 1.5fr;
+    /* This defines the number and the heights of rows within a grid layout. */
     grid-template-rows: 0.9fr 1.8fr 0.3fr;
+    /* This sets gap between rows and columns to 0px */
     gap: 0px 0px;
+    /* property controls how auto-placed items get inserted in the grid. */
     grid-auto-flow: row;
     grid-template-areas:
       "nav content content"
@@ -115,7 +52,22 @@
       "nav content content";
   }
   
-  .nav { grid-area: nav; }
+  /* Here, I styled the navigation bar */
+  .nav { 
+    grid-area: nav; 
+    /* It will have a white background around the images */
+    background: white;
+    /* The top padding is set here */
+    padding-top: 20px;
+    /* The left padding is set here */
+    padding-left: 10px;
+    /* By creating a right margin of 50px, this creates space between the navigation bar and the rest of the content*/
+    margin-right: 50px;
+    /* The background of the div will have a 20px radius */
+    border-radius: 20px;
+  }
+  
+  
   
   .content { grid-area: content; }
   
