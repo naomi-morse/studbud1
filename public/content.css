@@ -37,6 +37,7 @@ input[type=submit] {
   /* It will be blue */
   background-color: rgb(60, 96, 239);
   /* The text will be white */
+  color: white;
   /* Sets the padding around the text */
   padding: 14px 20px;
   margin: 10px 0px;
@@ -64,7 +65,7 @@ input[type=submit]:hover {
   grid-template-columns: 0.2fr 1.5fr 1.5fr;
   /* This defines the number and the heights of rows within a grid layout. */
   grid-template-rows: 0.9fr 1.8fr 0.3fr;
-  /* This sets gap between rows and columns to 0px and 70px*/
+  /* This sets gap between rows and columns to 0px */
   gap: 0px 0px;
   /* property controls how auto-placed items get inserted in the grid. */
   grid-auto-flow: row;

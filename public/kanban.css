@@ -289,12 +289,13 @@ button:hover {
 
 /* CSS GRID */
 
-.container {  display: grid;
+.container {  
+  display: grid;
   /* This defines the number and the widths of columns within a grid layout. In this case, there are three columns specified*/
   grid-template-columns: 0.2fr 1.6fr 1.4fr;
   /* This defines the number and the heights of rows within a grid layout. */
   grid-template-rows: 0.9fr 1.8fr 0.3fr;
-    /* This sets gap between rows and columns to 0px and 70px*/
+  /* This sets gap between rows and columns to 0px and 70px*/
   gap: 0px 70px;
   /* property controls how auto-placed items get inserted in the grid. */
   grid-auto-flow: row;

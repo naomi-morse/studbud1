@@ -1,38 +1,58 @@
+/* This defines the styling for entire body section of the webpage*/
 body{
+  /* This makes the background of the page a light gray colour*/
   background-color: rgb(242, 243, 247);
+  /* All body text will be part of the below font family, which was also loaded in html*/
+  /* This loads the fonts into the CSS, to actually apply them to the headings*/
   font-family: 'Hind', sans-serif;
   font-family: 'Poppins', sans-serif;
+  /* The page will have 50px margins around it*/
   margin: 50px;
+  /* This aligns all text to the center*/
   text-align: center;
 }
 
-
+/* This styles the buttons which control the stopwatch */
 .button{
 margin: 4px 0px 2px 0px;
+/* It will be blue */
 background-color: rgb(60, 96, 239);
+/* The text will be white */
 color: white;
-border-radius: 5px;
 width: 20%;
+/* It will have a black border with a 2 pixel width and solid appearance */
 border: 2px solid black;
+/* Has padding around the top and bottom*/
 padding: 10px 0px;
+/* Has rounded edges*/
 border-radius: 7px;
+/* Defines the size of the font */
 font-size: 17px;
+/* When the cursor goes over this section, it will change into a pointer  */
 cursor:pointer;
 }
 
+/* This selector will select and style the task when you hover your mouse over it */
 .button:hover {
+/* This creates a black shadow, of 11 pixels, behind the box, with an opacity of 0.5. This is the same as all the other buttons on the page, to ensure consistency  */
 box-shadow: 0 0 11px rgba(0, 0, 0, 0.5);; 
 }
 
+/* This sets the size of the h2 heading (i.e. the numbers) */
 h2{
 font-size: 100px
 }
 
 /* CSS GRID */
-.container {  display: grid;
+.container {  
+display: grid;
+/* This defines the number and the widths of columns within a grid layout. In this case, there are three columns specified*/
 grid-template-columns: 0.2fr 1.5fr 1.5fr;
+/* This defines the number and the heights of rows within a grid layout. */
 grid-template-rows: 0.9fr 1.8fr 0.3fr;
+/* This sets no gap between rows and columns*/
 gap: 0px 0px;
+/* property controls how auto-placed items get inserted in the grid. */
 grid-auto-flow: row;
 grid-template-areas:
   "nav stopwatch pomodoro"
@@ -41,12 +61,16 @@ grid-template-areas:
 }
 
 
+/* Here, I styled the navigation bar */
 .nav { 
-grid-area: nav; 
-background: white;
-padding-top: 20px;
-padding-left: 5px;
-border-radius: 20px;
+  grid-area: nav; 
+ /* It will have a white background around the images */
+  background: white;
+    /* It will have a top padding of 20px and a left one of 5px */
+  padding-top: 20px;
+  padding-left: 5px;
+  /* The background of the div will have a 20px readius */
+  border-radius: 20px;
 }
 
 .stopwatch { grid-area: stopwatch; }
