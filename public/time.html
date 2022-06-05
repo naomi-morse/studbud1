@@ -13,6 +13,10 @@
   <link href="time.css" rel="stylesheet">
 </head>
 
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Hind:wght@700&family=Poppins:wght@300&display=swap')
+</style>
+
 <!-- The body contains all of the content that gets displayed on the webpage itself --> 
 <body>
   <div class="container">
@@ -59,9 +63,22 @@
     
     <!--  This is a new div with seperate classes. It is a nested div. This will display the pomodoro timer-->
     <div class="pomodoro">
+      <div id="timer">
+        <div id="time">
+          <span id="minutes">25</span>
+          <span id="colon">:</span>
+          <span id="seconds">00</span>
+        </div>
+      </div>
   
-      
+      <div id="buttons">
+        <button id="work">Work</button>
+        <button id="shortBreak">Short Break</button>
+        <button id="longBreak">Long Break</button>
+        <button id="stop">Stop</button>
+      </div>
     </div>
+
   </div>
  
   <!--  This links the HTML page to the relevant Javascript page -->

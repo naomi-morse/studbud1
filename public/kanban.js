@@ -1,5 +1,7 @@
 // KANBAN JAVASCRIPT
 
+// using the HTML Drag & Drop API
+// This function sets data to the target element
 function drag(ev) {
     ev.dataTransfer.setData("text", ev.target.id);
 }

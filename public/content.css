@@ -47,6 +47,8 @@ input[type=submit] {
   border-radius: 7px;
   /* Defines the size of the font */
   font-size: 17px;
+  font-family: 'Hind', sans-serif;
+  font-family: 'Poppins', sans-serif;
   /* When the cursor goes over this section, it will change into a pointer  */
   cursor: pointer;
 }

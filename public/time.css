@@ -28,6 +28,10 @@ padding: 10px 0px;
 border-radius: 7px;
 /* Defines the size of the font */
 font-size: 17px;
+text-align:center;
+/* Load the font family to the buttons*/
+font-family: 'Hind', sans-serif;
+font-family: 'Poppins', sans-serif;
 /* When the cursor goes over this section, it will change into a pointer  */
 cursor:pointer;
 }
@@ -42,6 +46,49 @@ box-shadow: 0 0 11px rgba(0, 0, 0, 0.5);;
 h2{
 font-size: 100px
 }
+
+
+
+.pomodoro{
+  text-align:center;
+  font-family: 'Hind', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+#timer{
+  font-size:50px; 
+  margin:10px auto;
+  width:200px;
+  height:200px;
+  overflow:hidden;
+  position:relative;
+  cursor:default;
+}
+
+#time{
+  margin-top:70px;
+}
+
+
+#work, #shortBreak, #longBreak, #stop{
+  margin: 4px 0px 2px 0px;
+  background-color: rgb(60, 96, 239);
+  /* The text will be white */
+  color: white;
+  border-radius: 5px;
+  width: 20%;
+  border: 2px solid black;
+  padding: 10px 0px;
+  border-radius: 7px;
+  font-size: 17px;
+  text-align:center;
+  font-family: 'Hind', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  cursor:pointer;
+}
+
+
+
 
 /* CSS GRID */
 .container {  
