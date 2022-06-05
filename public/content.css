@@ -1,48 +1,72 @@
+/* This defines the styling for entire body section of the webpage*/
 body{
+  /* This makes the background of the page a light gray colour*/
   background-color: rgb(242, 243, 247);
+  /* All body text will be part of the below font family, which was also loaded in html*/
+  /* This loads the fonts into the CSS, to actually apply them to the headings*/
   font-family: 'Hind', sans-serif;
   font-family: 'Poppins', sans-serif;
+  /* The page will have 50px margins around it*/
   margin: 50px;
-  
 }
+
 
 th{
   padding-right: 300px;
 }
 
 
-
+/* Here, I styled the input box for the tasklist. */
 input[type=text], select {
+  /* It will occupy 100% of the width of the div*/
   width: 100%;
+  /* The padding is 12 px on the top and bottom and 20 px on the left and right */
   padding: 12px 20px;
+  /* The input boxes will have a 10px margin */
   margin: 10px ;
   display: inline-block;
+  /* The border has a thickness of 1 px, is solid and is grey */
   border: 1px solid grey;
+  /* The border corners will be slightly rounded */
   border-radius: 5px;
   box-sizing: border-box;
 }
 
 input[type=submit] {
   width: 100%;
+  /* It will be blue */
   background-color: rgb(60, 96, 239);
-  color: white;
+  /* The text will be white */
+  /* Sets the padding around the text */
   padding: 14px 20px;
   margin: 10px 0px;
+  /* It will have a black border with a 2 pixel width and solid appearance */
   border: 2px solid black;
+  /* Has rounded edges*/
   border-radius: 7px;
+  /* Defines the size of the font */
   font-size: 17px;
+  /* When the cursor goes over this section, it will change into a pointer  */
   cursor: pointer;
 }
 
+/* This selector will select and style the task when you hover your mouse over it */
 input[type=submit]:hover {
+  /* This creates a black shadow, of 11 pixels, behind the box, with an opacity of 0.5. This is the same as all the other buttons on the page, to ensure consistency  */
   box-shadow: 0 0 11px rgba(0, 0, 0, 0.5); 
 }
 
+
+
 /* CSS GRID */
 .container {  display: grid;
+  /* This defines the number and the widths of columns within a grid layout. In this case, there are three columns specified*/
   grid-template-columns: 0.2fr 1.5fr 1.5fr;
+  /* This defines the number and the heights of rows within a grid layout. */
   grid-template-rows: 0.9fr 1.8fr 0.3fr;
+  /* This sets gap between rows and columns to 0px and 70px*/
   gap: 0px 0px;
+  /* property controls how auto-placed items get inserted in the grid. */
   grid-auto-flow: row;
   grid-template-areas:
     "nav content content"
@@ -50,14 +74,21 @@ input[type=submit]:hover {
     "nav content content";
 }
 
+/* Here, I styled the navigation bar */
 .nav { 
   grid-area: nav; 
+  /* It will have a white background around the images */
   background: white;
+  /* The top padding is set here */
   padding-top: 20px;
+  /* The left padding is set here */
   padding-left: 10px;
+  /* By creating a right margin of 50px, this creates space between the navigation bar and the rest of the content*/
   margin-right: 50px;
+  /* The background of the div will have a 20px radius */
   border-radius: 20px;
 }
+
 
 
 .content { grid-area: content; }

@@ -1,47 +1,70 @@
+/* This defines the styling for entire body section of the webpage*/
 body{
+  /* This makes the background of the page a light gray colour*/
   background-color: rgb(242, 243, 247);
+  /* All body text will be part of the below font family, which was also loaded in html*/
+  /* This loads the fonts into the CSS, to actually apply them to the headings*/
   font-family: 'Hind', sans-serif;
   font-family: 'Poppins', sans-serif;
-   margin: 50px;
+  /* The page will have 50px margins around it*/
+  margin: 50px;
 }
 
+/* This sets the styling for the heading of the page*/
 .heading {
+  /* This makes the content be sized appropriately to fit the space available in its flex container. */
   display: flex;
   flex-direction: row;
+  /* The content will appear in the center of its div */
   justify-content: center;
 }
 
+/* This styles the actual text of the heading*/
+.heading-text {
+  /* The font will have a size of 25 pixels*/
+  font-size: 25px;
+  /* The background colour will be white*/
+  background-color: rgb(255, 255, 255);
+  /* Padding is used to create space around the heading, inside of its defined borders. The top and bottom padding will be 10 pixels, and the left and right padding will be 30 pixels */
+  padding: 10px 30px;
+  /* The border of the div will be curved at a radius of 10 pixels*/
+  border-radius: 10px;
+  /* The margins create space around the entire element, allowing the design to breathe more*/
+  margin: 30px;
+}
+
+/* This styles the overall kanban board */
 .kanban-board {
   display: flex;
   flex-direction: row;
+  /* The content will be aligned with equal space between each element */
   justify-content: space-between;
-}
-
-.heading-text {
-  font-size: 25px;
-  background-color: rgb(255, 255, 255);
-  padding: 10px 30px;
-  border-radius: 10px;
-  margin: 30px;
 }
 
 .kanban,
 .create-new-task-block {
+  /* The padding is set to 10 pixels */
   padding: 10px;
+  /* The element will take up 30.5% of the defined space */
   width: 30.5%;
+  /* There will be 5 pixels of margins around the outside of the element */
   margin: 5px;
   border-radius: 10px;
 }
 
-
+/* This styles the small coloured squares next the the heading text of each kanban section*/
 .square {
   display: inline-block;
+  /* This defines the size of the square, by indicating the height and width*/
   height: 20px;
   width: 20px;
+  /* The sets the colour of the square*/
   background-color: rgb(224, 98, 85);
+  /* This curves the edges of the square, to make them more round */
   border-radius: 3px;
 }
 
+/* Refer to previous square's comments */
 .square1 {
   display: inline-block;
   height: 20px;
@@ -66,27 +89,39 @@ body{
   border-radius: 3px;
 }
 
-
+/* This styles the output task boxes, once the user inputs their information */
 .task {
+  /* The element will have a white background */
   background-color: white;
+  /* This defines the margins around each element, so their is sufficient space between them all */
   margin: 10px 0px 20px 0px;
+  /* This curves the corners of the box */
   border-radius: 10px;
+  /* This creates space between the text and the outside of the box */
   padding: 25px;
 }
 
+/* This selector will select and style the task when you hover your mouse over it */
 .task:hover {
+  /* This creates a black shadow, of 11 pixels, behind the box, with an opacity of 0.5  */
   box-shadow: 0 0 11px rgba(0, 0, 0, 0.5);; 
 }
 
+/* This styles the button of the tasks*/
 #task-button {
   margin: 10px 0px 5px 0px;
+  /* It will be blue */
   background-color: rgb(60, 96, 239);
-  border-radius: 2px;
   width: 100%;
+  /* It will have a black border with a 2 pixel width and solid appearance */
   border: 2px solid black;
+  /* Sets padding around the text */
   padding: 10px 20px;
+  /* Has rounded edges*/
   border-radius: 8px;
+  /* Defines the size of the font */
   font-size: 17px;
+  /* This is the font family that will be used for the text inside the button*/
   font-family: 'Hind', sans-serif;
   font-family: 'Poppins', sans-serif;
 }
@@ -94,34 +129,43 @@ body{
 
 
 
-/*Creating a new task*/
+/*CREATING A NEW TASK*/
 
+/* This styles elements when the user want to add a new task to the kanban board*/
 .create-new-task-block {
   display: none;
-  /* display: flex; */
+  /* The background will be a light grey colour */
   background: rgb(242, 243, 247);
   width: 64.4%;
+  /* Here, the flexible items are displayed vertically, as a column */
   flex-direction: column;
 }
 
 .form-row {
   display: flex;
+  /* Here, the flexible items are displayed horizontally, as a row */
   flex-direction: row;
+  /* It will have 10 pixel margins around it */
   margin: 10px;
 }
 
 .form-row-label {
   width: 15%;
+  /* Padding around the lable of 8 pixels */
   padding: 8px;
   padding-right: 25px;
+  /* Border will be solid, black and have some some rounded edges*/
   border: solid black;
-  border-right: 0;
   border-radius: 5px 0px 0px 5px;
 }
 
+/* This styles the row of the input boxes*/
 .form-row-input {
+/* Border will be solid and black*/
   border: solid black;
+/* The border will be slightly curved*/
   border-radius: 0px 5px 5px 0px;
+/* It will occupy 85% of the defined space*/
   width: 85%;
 }
 
@@ -132,41 +176,59 @@ textarea {
 .form-row-buttons {
   display: flex;
   flex-direction: row;
+  /* The content will be aligned with equal space between each element */
   justify-content: space-between;
+  /* The content will have a margin of 5 */
   margin: 5px;
 }
 
 
+/* This styles the two buttons, so they will be the exact same, with different text*/
 #save-button,
 #cancel-button {
   margin: 4px 0px 2px 0px;
+  /* It will be blue */
   background-color: rgb(60, 96, 239);
   border-radius: 5px;
   width: 50%;
   border: 2px solid black;
-  padding: 10px 30px;
-  border-radius: 7px;
+  /* Sets padding around the text */
+  padding: 10px 20px;
+  /* Has rounded edges*/
+  border-radius: 8px;
+  /* Defines the size of the font */
   font-size: 17px;
+  /* This is the font family that will be used for the text inside the button*/
   font-family: 'Hind', sans-serif;
   font-family: 'Poppins', sans-serif;
 }
 
 
+
+
 /* TASKLIST CSS */
+/* I created padding around the top of the tasklist, otherwise, it was too close to the kanban board */
 .tasklist{
   padding-top: 200px;
 }
 
+/* Here, I styled the input boxes for the task list. As they all had different input types, I made one for each type. */
 input[type=text], select {
+ /* The width will be st to 100% of the screen */
   width: 100%;
+  /* The top and bottom padding will be 12px and the left and right will b 20px  */
   padding: 12px 20px;
+  /* there will be a 10 pixel margin around the input boxes, so there is enough space between each element */
   margin: 10px ;
   display: inline-block;
+  /* there will be a thin border around the boxes */
   border: 1px solid #ccc;
+  /* The border will have a slight curve */
   border-radius: 5px;
   box-sizing: border-box;
 }
 
+/* See above comments */
 input[type=time], select {
   width: 100%;
   padding: 12px 20px;
@@ -197,31 +259,44 @@ input[type=number], select {
   box-sizing: border-box;
 }
 
-
+/* This styles the button for the tasklist*/
 button{
   width: 100%;
+  /* It will be blue */
   background-color: rgb(60, 96, 239);
+  /* The text will be white */
   color: white;
+  /* Sets padding around the text */
   padding: 14px 20px;
   margin: 10px 0px;
+  /* It will have a black border with a 2 pixel width and solid appearance */
   border: 2px solid black;
+  /* Has rounded edges*/
   border-radius: 7px;
+  /* Defines the size of the font */
   font-size: 17px;
   cursor: pointer;
 }
 
+
+/* This selector will select and style the task when you hover your mouse over it */
 button:hover {
+  /* This creates a black shadow, of 11 pixels, behind the box, with an opacity of 0.5. This is the same as all the other buttons on the page, to ensure consistency  */
   box-shadow: 0 0 11px rgba(0, 0, 0, 0.5);; 
 }
 
 
 
-/* CSS grid */
+/* CSS GRID */
 
 .container {  display: grid;
+  /* This defines the number and the widths of columns within a grid layout. In this case, there are three columns specified*/
   grid-template-columns: 0.2fr 1.6fr 1.4fr;
+  /* This defines the number and the heights of rows within a grid layout. */
   grid-template-rows: 0.9fr 1.8fr 0.3fr;
+    /* This sets gap between rows and columns to 0px and 70px*/
   gap: 0px 70px;
+  /* property controls how auto-placed items get inserted in the grid. */
   grid-auto-flow: row;
   grid-template-areas:
     "nav content content"
@@ -229,13 +304,18 @@ button:hover {
     "nav content content";
 }
 
+/* Here, I styled the navigation bar */
 .nav { 
   grid-area: nav; 
+ /* It will have a white background around the images */
   background: white;
+    /* It will have a top padding of 20px and a left one of 5px */
   padding-top: 20px;
   padding-left: 5px;
+  /* The background of the div will have a 20px readius */
   border-radius: 20px;
 }
 
-
-.content { grid-area: content; }
+.content { 
+  grid-area: content; 
+}
